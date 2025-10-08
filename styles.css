@@ -1,1 +1,66 @@
 /*  your css code here. If applicable */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-content a {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #e60023;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-content a:hover {
+    background-color: #b5001c;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero img, .hero-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-content {
+        padding: 20px;
+        text-align: center;
+    }
+}
